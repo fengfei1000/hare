@@ -3,7 +3,7 @@ hare template tags
 
 几个简单定义的JSP标签解决了在JavaEE项目开中页面布局及页面样式更换的麻烦。
 通过u:body，u:define，u:insert三个标签即可实现页面的模板化开发。
-项目是基于struts2来测试的，但标签与struts2无任何依赖关系。
+项目是用JSP/struts2来测试可用，但标签与struts2无任何依赖关系。
 
 
 
