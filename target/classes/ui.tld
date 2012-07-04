@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	<description>Hare custom template tags</description>
+	<display-name>ui tags</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>h</short-name>
+	<uri>/ui-tags</uri>
+	<tag>
+		<name>insert</name>
+		<tag-class>commons.jsp.tags.ui.InsertTag</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>tags.DefineTag</type>
+		</attribute>
+	</tag>
+	<tag>
+		<name>define</name>
+		<tag-class>commons.jsp.tags.ui.DefineTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>body</name>
+		<tag-class>commons.jsp.tags.ui.BodyTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>template</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<name>clear</name>
+		<tag-class>commons.jsp.tags.ui.ClearTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+
+</taglib>
