@@ -6,6 +6,7 @@
 
 <%@ taglib prefix="u" uri="/WEB-INF/ui.tld"%>
 <meta charset="UTF-8">
+
 </head>
 <body>
 	<u:body template="/demo/template.jsp" action="#"

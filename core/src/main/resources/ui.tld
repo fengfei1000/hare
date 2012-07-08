@@ -6,10 +6,10 @@
 	<display-name>ui tags</display-name>
 	<tlib-version>1.0</tlib-version>
 	<short-name>h</short-name>
-	<uri>/ui-tags</uri>
+	<uri>/hare-ui-tags</uri>
 	<tag>
 		<name>insert</name>
-		<tag-class>commons.jsp.tags.ui.InsertTag</tag-class>
+		<tag-class>fengfei.commons.jsp.tags.ui.InsertTag</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -21,7 +21,7 @@
 	</tag>
 	<tag>
 		<name>define</name>
-		<tag-class>commons.jsp.tags.ui.DefineTag</tag-class>
+		<tag-class>fengfei.commons.jsp.tags.ui.DefineTag</tag-class>
 		<body-content>scriptless</body-content>
 		<attribute>
 			<name>name</name>
@@ -32,7 +32,7 @@
 
 	<tag>
 		<name>body</name>
-		<tag-class>commons.jsp.tags.ui.BodyTag</tag-class>
+		<tag-class>fengfei.commons.jsp.tags.ui.BodyTag</tag-class>
 		<body-content>scriptless</body-content>
 		<attribute>
 			<name>template</name>
@@ -43,8 +43,30 @@
 	</tag>
 	<tag>
 		<name>clear</name>
-		<tag-class>commons.jsp.tags.ui.ClearTag</tag-class>
+		<tag-class>fengfei.commons.jsp.tags.ui.ClearTag</tag-class>
 		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>style</name>
+		<tag-class>fengfei.commons.jsp.tags.ui.StyleTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>src</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<name>script</name>
+		<tag-class>fengfei.commons.jsp.tags.ui.ScriptTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>src</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
 	</tag>
 
 </taglib>

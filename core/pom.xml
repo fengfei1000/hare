@@ -7,7 +7,7 @@
 		<groupId>fengfei</groupId>
 		<version>0.1-beta1</version>
 	</parent>
-
+ 
 	<artifactId>hare.core</artifactId>
 	<packaging>jar</packaging>
 	<name>hare Maven Webapp</name>

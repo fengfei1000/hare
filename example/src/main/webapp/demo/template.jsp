@@ -6,7 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title><u:insert name="title" /></title>
-
+<u:style src="/css/s.css" />
+<u:script src="/css/s.js"/>
 <style type="text/css">
 *,html,form,body,div,table,td,th {
 	/*注意这个字体顺序，并且必须有(font-family:"Arial")，否则Jquery UI 显示稍有问题*/
