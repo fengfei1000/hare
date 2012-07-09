@@ -17,16 +17,16 @@ hare template tags
 
 
 已测试通过的Web容器和JavaEE服务器列表：
-  apache-tomcat-6.0.x
-  glassfish-3.0.1/glassfish-3.0.1-web
-  glassfish-installer-v2.1.1
-  resin-3.1.10
-  resin-4.0.10
-  jetty-6.1.25
+	apache-tomcat-6.0.x
+	glassfish-3.0.1/glassfish-3.0.1-web
+	glassfish-installer-v2.1.1
+	resin-3.1.10
+	resin-4.0.10
+	jetty-6.1.25
 
 失败的服务器：
-  jetty-hightide-7.1.6
-  jetty-hightide-8.0.0.M1
+	jetty-hightide-7.1.6
+	jetty-hightide-8.0.0.M1
 
 由于其在部署失败，未找具体原因，其部署失败是struts2不能正确部署引起；原则上应该不会有问题。
 由于条件其他服务器未作测试。
@@ -35,34 +35,34 @@ hare template tags
 
 模板页：template.jsp
 -----------------------------------------------------------------------------
-  <body>
-  输出的自定义属性值：${request._body_attr.action}
-  <div>
-     标题：<u:insert name="header" />
-  </div>
-  <div>
-     页面内容<u:insert name="body" />
-  </div>
-  <div>
-    页面脚部：<u:insert name="footer" />
-  </div>
-  </body>
+	<body>
+	输出的自定义属性值：${request._body_attr.action}
+	<div>
+		 标题：<u:insert name="header" />
+	</div>
+	<div>
+		 页面内容<u:insert name="body" />
+	</div>
+	<div>
+		页面脚部：<u:insert name="footer" />
+	</div>
+	</body>
 -----------------------------------------------------------------------------
 
 使用页面：
 
 -----------------------------------------------------------------------------
-  不显示的文字和内容<hr/><hr/>
-  <body>
-  <u:body template="template.jsp" action="自定义属性值"   >
-  不显示的文字<hr/><hr/>
-          <u:define name="header">标题</u:define>
-  不显示的文字和内容<hr/><hr/>
-          <u:define name="body">
-                  <img src="http://www.google.com.hk/intl/zh-CN/images/logo_cn.png" />
-          </u:define> 
-  不显示的文字和内容<hr/><hr/>
-  
-  </body>
-  不显示的文字和内容<hr/><hr/>
+	不显示的文字和内容<hr/><hr/>
+	<body>
+	<u:body template="template.jsp" action="自定义属性值"	 >
+	不显示的文字<hr/><hr/>
+					<u:define name="header">标题</u:define>
+	不显示的文字和内容<hr/><hr/>
+					<u:define name="body">
+									<img src="http://www.google.com.hk/intl/zh-CN/images/logo_cn.png" />
+					</u:define> 
+	不显示的文字和内容<hr/><hr/>
+	
+	</body>
+	不显示的文字和内容<hr/><hr/>
 -----------------------------------------------------------------------------
