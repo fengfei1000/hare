@@ -17,6 +17,7 @@ hare template tags
 
 
 已测试通过的Web容器和JavaEE服务器列表：
+
 	apache-tomcat-6.0.x
 	glassfish-3.0.1/glassfish-3.0.1-web
 	glassfish-installer-v2.1.1
@@ -25,6 +26,7 @@ hare template tags
 	jetty-6.1.25
 
 失败的服务器：
+
 	jetty-hightide-7.1.6
 	jetty-hightide-8.0.0.M1
 
